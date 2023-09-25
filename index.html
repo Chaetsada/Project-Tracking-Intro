@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Tracking Intro</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="icon" href="images/logo.svg">
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <img src="images/logo.svg" class="logo" alt="logo">
+      <ul class="navbar">
+        <li><a href="#">product</a></li>
+        <li><a href="#">features</a></li>
+        <li><a href="#">pricing</a></li>
+        <li class="dott"></li>
+        <li class="login"><a href="#">login</a></li>
+      </ul>
+      <div id="mobile-nav">
+        <ul>
+          <li><a href="#">PRODUCT</a></li>
+          <li><a href="#">FEATURES</a></li>
+          <li><a href="#">PRICING</a></li>
+          <li><a href="#">LOGIN</a></li>
+        </ul>
+      </div>
+      <a href="#" id="ham-menu" onclick="toggleNav()">
+        <img src="images/icon-hamburger.svg" alt="icon-hamburger">
+      </a>
+      <a href="javascript:void(0)" id="close-btn"" onclick="closeNav()">
+        <img src="images/icon-close.svg" alt="icon-close">
+      </a>
+    </nav>
+    <!---------- Navigation End ------------>
+    <section>
+      <div class="wrapper">
+        <div class="hero-header">
+          <p>
+            <span class="badge">NEW</span> 
+            MONOGRAPH DASHBOARD
+          </p>
+          <h1>POWERFUL INSIGHTS INTO YOUR TEAM</h1>
+        </div>
+        <div class="hero-info">
+          <p>Project planning and time tracking for agile teams</p>
+        </div>
+        <div class="hero-ft">
+          <button>SCHEDULE A DEMO</button>
+          <p>TO SEE A PREVIEW</p>
+        </div>
+      </div>
+
+      <div class="rec"></div>
+
+      <img src="images/illustration-devices.svg" class="devices" alt="illustration-devices">
+    </section>
+  </div>
+  <script>
+    const nav = document.querySelector("#mobile-nav");
+    const myMenu = document.querySelector("#ham-menu");
+    const close = document.querySelector("#close-btn");
+    function toggleNav(){
+        nav.style.display = "block";
+        close.style.display = "block";
+        myMenu.style.display = "none";
+    }
+    function closeNav(){
+        nav.style.display="none";
+        close.style.display = "none";
+        myMenu.style.display = "block";
+    }
+  </script>
+</body>
+</html>
